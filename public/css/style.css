@@ -1,0 +1,64 @@
+* {
+    font-family: 'Bebas Neue';
+}
+
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.navbar-light{
+    padding: 20px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+#baner{
+    background-image: url('../imgs/banner.jpg');
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#baner form{   
+    width: 50%;
+    margin: 0 auto;
+}
+
+#baner h1{
+    color: rgb(255, 187, 0);
+    margin-bottom:30px;
+    padding-top:60px;
+}
+
+
+
+#cards-eventos .card{
+    padding: 0;
+    border-radius: 10px;
+    margin:20px;
+}
+
+#cards-eventos img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-unico{
+    background-color: rgb(230, 161, 11);
+    border-color: rgb(255, 187, 0);
+    color:white;
+}
+
+.btn-unico:hover{
+    background-color: rgb(245, 103, 9);
+    border-color: rgb(245, 103, 9);
+    color:white;
+}
+
+
+
