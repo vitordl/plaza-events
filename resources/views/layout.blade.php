@@ -116,7 +116,7 @@
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
                         <p>25/12/2022</p>
-                        <h5>HTML, CSS básico</h5>
+                        <h5>HTML e CSS básico</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
