@@ -15,13 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Montserrat:wght@100&family=Noto+Sans&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap" rel="stylesheet">
 
 
+    
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="collapse navbar-collapse" id="navbar">
-            <a href="" class="navbar-brand">Plaza</a>
+            <a href="" class="navbar-brand"><ion-icon name="chevron-back-outline"></ion-icon> Plaza <ion-icon name="chevron-forward-outline"></ion-icon></a>
         </div>
 
         <ul class="navbar-nav">
@@ -44,7 +47,7 @@
     <div class="container-fluid">
         <div class="col-md-11 offset-md-1 mt-5">
             <h2>Próximos eventos</h2>
-            <p>Veja os eventos dos próximos dias</p>
+            <p class="eventos-p">Veja os eventos dos próximos dias</p>
     
             
     
@@ -68,11 +71,11 @@
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
                 </div>
-
+                
                 <div class="card col-md-3">
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
-                        <p>10/09/2022</p>
+                        <p>12/09/2022</p>
                         <h5>Show da Fé</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
@@ -82,7 +85,7 @@
                 <div class="card col-md-3">
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
-                        <p>10/09/2022</p>
+                        <p>14/09/2022</p>
                         <h5>Discutindo Programação</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
@@ -102,7 +105,7 @@
                 <div class="card col-md-3">
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
-                        <p>10/09/2022</p>
+                        <p>02/11/2022</p>
                         <h5>Por que as ideias acabam?</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
@@ -112,7 +115,7 @@
                 <div class="card col-md-3">
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
-                        <p>10/09/2022</p>
+                        <p>25/12/2022</p>
                         <h5>HTML, CSS básico</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
@@ -135,5 +138,8 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

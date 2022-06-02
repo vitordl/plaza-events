@@ -16,6 +16,19 @@ body{
     padding: 0;
 }
 
+.navbar-brand{
+    font-size: 30px;
+}
+
+.eventos-p{
+    font-size: 18px;
+}
+
+.navbar .nav-link{
+    color:rgb(112, 97, 97) !important;
+    font-size: 18px;
+}
+
 #baner{
     background-image: url('../imgs/banner.jpg');
     height: 400px;
