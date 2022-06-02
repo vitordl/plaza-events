@@ -50,10 +50,10 @@
     
             <div id="cards-eventos" class="row">
                 <div class="card col-md-3">
-                    <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
+                    <img src="imgs/event2.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
-                        <p>10/09/2022</p>
-                        <h5>Palestra de JS</h5>
+                        <p>09/09/2022</p>
+                        <h5>Bate papo com o coach quântico mais famoso do Brasil</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
@@ -73,7 +73,7 @@
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
                         <p>10/09/2022</p>
-                        <h5>Palestra de JS</h5>
+                        <h5>Show da Fé</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
@@ -83,7 +83,17 @@
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
                         <p>10/09/2022</p>
-                        <h5>Palestra de JS</h5>
+                        <h5>Discutindo Programação</h5>
+                        <p>X Participantes</p>
+                        <a href="#" class="btn btn-unico">Saber mais</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-3">
+                    <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
+                    <div class="card-body">
+                        <p>26/10/2022</p>
+                        <h5>Só por Deus</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
@@ -93,16 +103,7 @@
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
                         <p>10/09/2022</p>
-                        <h5>Palestra de JS</h5>
-                        <p>X Participantes</p>
-                        <a href="#" class="btn btn-unico">Saber mais</a>
-                    </div>
-                </div>
-                <div class="card col-md-3">
-                    <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
-                    <div class="card-body">
-                        <p>10/09/2022</p>
-                        <h5>Palestra de JS</h5>
+                        <h5>Por que as ideias acabam?</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
@@ -112,11 +113,14 @@
                     <img src="imgs/event1.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
                         <p>10/09/2022</p>
-                        <h5>Palestra de JS</h5>
+                        <h5>HTML, CSS básico</h5>
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
                 </div>
+               
+
+               
     
     
                
