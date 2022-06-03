@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
-});
+// Route::get('/', function () {
+//     return view('layout');
+// });
+
+Route::get('/', 'PlazaController@index')->name('home');
+Route::get('/new_event', 'PlazaController@create')->name('new_event');
+Route::post('/store', 'PlazaController@store')->name('store');

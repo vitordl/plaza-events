@@ -28,10 +28,10 @@
         </div>
 
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="" class="nav-link">Meus Eventos</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Eventos</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Registrar</a></li>
+            <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Eventos</a></li>
+            <li class="nav-item"><a href="{{ route('new_event') }}" class="nav-link">Criar Evento</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Entrar</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Cadastrar</a></li>
         </ul>
     </nav>
 
@@ -46,12 +46,10 @@
 
     <div class="container-fluid">
         <div class="col-md-11 offset-md-1 mt-5">
-            <h2>Próximos eventos</h2>
-            <p class="eventos-p">Veja os eventos dos próximos dias</p>
-    
-            
-    
-            <div id="cards-eventos" class="row">
+                
+            @yield('conteudo')
+
+            {{-- <div id="cards-eventos" class="row">
                 <div class="card col-md-3">
                     <img src="imgs/event2.jpg" alt="evento-img" class="image-fluid">
                     <div class="card-body">
@@ -120,14 +118,14 @@
                         <p>X Participantes</p>
                         <a href="#" class="btn btn-unico">Saber mais</a>
                     </div>
-                </div>
+                </div> 
                
 
                
     
     
                
-            </div>
+            </div>--}}
         </div>
     </div>
     
