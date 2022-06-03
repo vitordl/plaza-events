@@ -33,6 +33,8 @@
             <li class="nav-item"><a href="" class="nav-link">Entrar</a></li>
             <li class="nav-item"><a href="" class="nav-link">Cadastrar</a></li>
         </ul>
+
+        {{-- {{ route('login')}}   {{ route('register')}}   --}}
     </nav>
 
     <div class="container-fluid">  

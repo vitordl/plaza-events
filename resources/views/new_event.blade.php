@@ -30,11 +30,10 @@
 
                 <h5 class="mt-3">O evento terá</h5>
                 <div class="form-check">
-                <input type="checkbox" name="itens[]" id="it1" class="form-check-input" value="Cadeiras"> Cadeiras<br>
-                <input type="checkbox" name="itens[]" id="it2" class="form-check-input" value="Brindes"> Brindes<br>
-                <input type="checkbox" name="itens[]" id="it3" class="form-check-input" value="Bebidas"> Bebidas<br>
-                <input type="checkbox" name="itens[]" id="it4"
-                class="form-check-input" value="Sorteios"> Sorteios<br> 
+                <input type="checkbox" name="itens[]" class="form-check-input" value="Cadeiras"> Cadeiras<br>
+                <input type="checkbox" name="itens[]" class="form-check-input" value="Brindes"> Brindes<br>
+                <input type="checkbox" name="itens[]" class="form-check-input" value="Bebidas"> Bebidas<br>
+                <input type="checkbox" name="itens[]" class="form-check-input" value="Sorteios">Sorteios<br> 
                 </div>
                
             

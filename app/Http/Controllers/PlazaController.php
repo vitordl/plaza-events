@@ -26,17 +26,23 @@ class PlazaController extends Controller
         // $data = $request->all();
         // echo "<pre>";
         // print_r($data);
-        $event = Event::get();
+        $event = new Event();
         $event->title = $request->evento;
         $event->city = $request->cidade;
         //$event->data = $request->input('data');
         $event->description = $request->descricao;
-        $event->private = $request->privado;
-        // $event->items = $request->input('itens');
-        // foreach($event->items as $ev){
-        //     echo $ev;
-        // }
-        //$event->save();
+  
+        $request->privado = $request->privado == 'sim'? 1 : 0;
+        $event->private = $request->privado; 
+        
+        //$dados = Event::create($request->all());
+
+        $itens = json_encode($request->itens);
+        $event->items_ev = $itens;
+        
+        $event->save();
+
+        return redirect()->route('home');
     }
 
     
