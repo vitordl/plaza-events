@@ -10,8 +10,10 @@
 
     <div class="mt-3">
         
-        <form action="{{ route('store') }}" method="post">
+        <form action="{{ route('store') }}" method="post" enctype="multipart/form-data">
             @csrf
+
+                <h5>Imagem do Evento</h5><input type="file" name="image" class="form-control-file">
                 <h5 class="mt-3">Evento</h5><input type="text" class="form-control" name="evento">
                 
                 <h5 class="mt-3">Cidade</h5><input type="text" class="form-control" name="cidade">

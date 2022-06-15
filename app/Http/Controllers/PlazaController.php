@@ -39,6 +39,16 @@ class PlazaController extends Controller
 
         $itens = json_encode($request->itens);
         $event->items_ev = $itens;
+
+        if($request->hasFile('image') && $request->file('image')->isValid()){
+            $extension = $request->image->extension();
+
+            $imageName = md5($request->image->getClientOriginalName().strtotime('now')).".".$extension;
+
+            $request->image->move(public_path('img/events'), $imageName);
+
+            $event->image = $imageName;
+        }
         
         $event->save();
 
@@ -46,9 +56,11 @@ class PlazaController extends Controller
     }
 
     
-    public function show($id)
+    public function show_event($id)
     {
-        //
+        $event = Event::where('id', $id)->first();
+        //return redirect()->route('show_event', ['event' => $event]);
+        return view('show_event', ['event' => $event, 'imagem_evento' => $event->image]);
     }
 
     public function edit($id)

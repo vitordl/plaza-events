@@ -48,22 +48,7 @@
     </nav>
 
 
-    <div class="container-fluid">  
-            <div id="baner">
-                <h1 class="text-center ">Busque um evento</h1>
-                <form action="">
-                    <input type="text" name="" id="" class="form-control" placeholder="Pesquisar...">
-                </form>
-            </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="col-md-11 offset-md-1 mt-5">
-                
-            @yield('conteudo')
-
-        </div>
-    </div>
+    @yield('conteudo_show')
     
     
     
