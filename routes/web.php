@@ -21,7 +21,10 @@ Route::get('/', 'PlazaController@index')->name('home');
 Route::get('/new_event', 'PlazaController@create')->name('new_event')->middleware('auth');
 Route::post('/store', 'PlazaController@store')->name('store');
 
-Route::get('/show_event/{id}', 'PlazaController@show_event')->name('show_event');
+Route::get('/show_event/{id}', 'PlazaController@show_event')->name('show_event')->middleware('auth');
+
+Route::post('/participar/{id}', 'PlazaController@participar')->name('participar')->middleware('auth');
+
 
 // Route::get('/login', function(){
 //     return view('auth.login');

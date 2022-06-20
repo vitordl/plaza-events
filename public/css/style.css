@@ -1,11 +1,14 @@
 * {
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue' !important;
+    
 }
+
 
 #quecoisa{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: 5px solid red !important;
+    max-height: 300px !important;
+
 }
 
 body{
@@ -80,5 +83,15 @@ body{
     color:white;
 }
 
+footer{
+    text-align: center;
+    background-color: rgb(46, 50, 51);
+    color:white;
+    padding:30px;
+    position:absolute;
+    width: 100%;
+    
+    
+}
 
 

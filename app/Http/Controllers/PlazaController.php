@@ -4,14 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Event;
+use App\Models\User;
 
 class PlazaController extends Controller
 {
    
     public function index()
     {
-        $events = Event::all();
-        return view('home', ['events' => $events]);
+        $buscar = request('buscar_name');
+        if($buscar){
+            $events = Event::where('title', 'like', '%'.$buscar.'%')->get();
+        }else{
+            $events = Event::all();
+        }
+        
+        return view('home', ['events' => $events, 'buscar' => $buscar]);
     }
 
     
@@ -34,6 +41,10 @@ class PlazaController extends Controller
   
         $request->privado = $request->privado == 'sim'? 1 : 0;
         $event->private = $request->privado; 
+
+        $user = auth()->user();
+        $event->user_id = $user->id;
+
         
         //$dados = Event::create($request->all());
 
@@ -52,15 +63,43 @@ class PlazaController extends Controller
         
         $event->save();
 
-        return redirect()->route('home');
+        return redirect()->route('home')->with('msg', 'Evento criado com sucesso!');
     }
 
     
     public function show_event($id)
     {
         $event = Event::where('id', $id)->first();
+
+        $user = User::where('id', $event->user_id)->first()->toArray();
+        
         //return redirect()->route('show_event', ['event' => $event]);
-        return view('show_event', ['event' => $event, 'imagem_evento' => $event->image]);
+        return view('show_event', 
+        ['event' => $event, 'imagem_evento' => $event->image, 'user' => $user]);
+    }
+
+    public function participar($id){
+
+        $user = auth()->user();
+        $event = Event::findOrFail($id);
+
+        
+        $event_users = $event->users()->where('user_id', '=', $user->id)->where('event_id', '=', $id)->count();
+        if($event_users == 0){
+
+            $user->eventsAsParticipant()->attach($id);
+            //refazer num metodo mais real, no meu nível de aprendizado
+
+            return redirect()->route('home')->with('msg', 'Sua presença foi confirmada no evento '.$event->title);
+
+        }else{
+            return redirect()->route('home')->with('msg', 'Você já está inscrito no evento '.$event->title);
+        }
+        
+       
+      
+        
+        
     }
 
     public function edit($id)

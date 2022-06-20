@@ -18,7 +18,7 @@
     
 
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -51,13 +51,13 @@
     <div class="container-fluid">  
             <div id="baner">
                 <h1 class="text-center ">Busque um evento</h1>
-                <form action="">
-                    <input type="text" name="" id="" class="form-control" placeholder="Pesquisar...">
+                <form action="{{route('home')}}" method="get">
+                    <input type="text" name="buscar_name" id="buscar_id" class="form-control" placeholder="Pesquisar...">
                 </form>
             </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="col-md-11 offset-md-1 mt-5">
                 
             @yield('conteudo')
@@ -75,4 +75,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
+<footer class="mt-5">
+    <p>Plaza Events &copy; 2022</p>
+</footer>
 </html>
